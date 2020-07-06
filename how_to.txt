@@ -1,0 +1,59 @@
+//
+// mongoDB set up
+//
+
+//
+// heroku server setup
+//
+https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+
+// heroku client
+heroku login
+
+// create a heroku app, and push the node.js server code
+heroku create gs-heroku-test
+git push heroku master
+
+// run one instance
+heroku ps:scale web=1
+
+// https://gs-heroku-test.herokuapp.com/ deployed to Heroku
+
+
+// list your servers
+heroku list
+
+=== gjeromesolomon@gmail.com Apps
+gs-heroku-test
+gs-reactaurant
+
+
+// to add an existing git repo
+heroku git:remote -a gs-reactaurant
+
+// setup server directory
+npm init
+npm install express --save
+npm install body-parser --save
+npm install mongodb --save
+
+// to run and test on localhost
+node index.js
+// then do
+http://localhost:3000/hello-world
+
+// connect git to heroku
+heroku git:remote -a gs-reactaurant
+
+// push and run a instance
+git push heroku master
+heroku ps:scale web=1
+
+// to run
+https://gs-reactaurant.herokuapp.com/hello-world
+
+// to debug server
+heroku logs --tail 
+
+
+

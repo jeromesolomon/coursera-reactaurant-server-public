@@ -1,0 +1,28 @@
+{
+  "name": "coursera-reactaurant-server",
+  "version": "1.0.0",
+  "description": "Backend heroku hosted NoSQL mongoDB RESTful node.js server to support the front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromesolomon/coursera-reactaurant-server.git"
+  },
+  "author": "Gabriel Jerome Solomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeromesolomon/coursera-reactaurant-server/issues"
+  },
+  "homepage": "https://github.com/jeromesolomon/coursera-reactaurant-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.5.9",
+    "prompt-sync": "^4.2.0"
+  }
+}
