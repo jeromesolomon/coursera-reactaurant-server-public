@@ -94,9 +94,9 @@ app.post("/comments", (request, response) => {
 
   let collection = database.collection("comments");
 
-  // figure out the number of comments that match/filter for dishId
+  // figure out the number of comments
   let numComments = 0;
-  collection.countDocuments({dishId: request.body.dishId}, (countError, countResponse) => {
+  collection.countDocuments({}, (countError, countResponse) => {
 
     if (countError) {
         return response.status(500).send(error);
